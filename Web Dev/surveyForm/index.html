@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1  id="title">Office Decorators' Service Survey Form</h1>
+    <p id="description">Help us improve our services by filling out this form</p>
+    <form id="survey-form" action="" method="post">
+       <fieldset class="personal-information">
+            <legend>Fill in the following to tell us about yourself </legend>
+            <label for="name" >Please enter your name :
+                <input type="text" id="name" placeholder="Enter full name here..." required>
+            </label>
+            <label for="email" >Please enter your email :
+                <input type="email" id="email" placeholder="Enter email here..." required>
+            </label>
+            <label for="number" >Please enter your age :
+                <input type="number" id="number" min="18" max="150" placeholder="Age..." required>
+            </label>
+            <label for="dropdown">What is your gender? 
+                <select name="gender" id="dropdown">What is your gender?
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </label>
+       </fieldset>
+        <fieldset>
+            <legend>Share your experience with us here </legend>
+            <p>How much did you enjoy our services?</p>
+            <label for="experience"><input class="inline" id="experience" name="experience" value="enjoyed" type="radio" checked>Very much</label>
+            <label for="experience"><input class="inline" id="experience" name="experience" value="fairly" type="radio">Fairly</label>    
+            <label for="experience"><input class="inline" id="experience" name="experience" value="improve" type="radio">Need to improve</label>     
+            <p>Where did you know about us?</p>   
+            <label for="know-about-us"><input class="inline" id="know-about-us" value="facebook" type="checkbox" checked />Facebook</label>
+            <label for="know-about-us"><input class="inline" id="know-about-us" value="linkedin" type="checkbox" />LinkedIn</label>    
+            <label for="know-about-us"><input class="inline" id="know-about-us" value="instagram" type="checkbox" />Instagram</label>    
+            <label for="know-about-us"><input class="inline" id="know-about-us" value="newspaper" type="checkbox" />Newspaper</label>   
+            <label for="know-about-us"><input class="inline" id="know-about-us" value="other" type="checkbox">Other</label>    
+            <p>Please share your views about the company.</p>   
+            <label for="review">
+                <textarea name="review" id="review" cols="60" rows="10" placeholder="Share your suggestions or any advice here...." ></textarea>
+            </label>
+        </fieldset>
+        <button id="submit" type="submit">submit 
+    </form>
+</body>
+</html>
